@@ -1,0 +1,74 @@
+<!-- Shannon Simpson -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Search Page</title>
+		<link rel="stylesheet" type="text/css" href="css/site.css">
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>      
+		<![endif]-->
+		<meta charset='utf-8'>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="HandheldFriendly" content="true" />
+	    <meta name="MobileOptimized" content="320" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	    <script src="js/script.js"></script> 
+	    <!--<link rel="stylesheet" href="css/styles.css">-->
+	</head>
+	<body>
+		<header>
+			<div class="GE_LOGO">
+				<img src="img/ge_mono_blue.png" />
+			</div>
+			<h1>Welcome!</h1>
+			<p><b>This is a site to search interesting projects.</b></p>
+		</header>
+		<hr />
+		<div id='cssmenu'>
+			<ul>
+			   <li class='active'><a href='index.html'><span>Home</span></a></li>
+			   <li><a href='about.html'><span>About</span></a></li>
+			   <li class='last'><a href='contact.html'><span>Contact</span></a></li>
+			</ul>
+		</div>
+		<hr />
+		<section id="main">
+			<p>In this <em>sample site</em>, we'll show a list of 
+				<a href="http://www.ge.com/careers/culture/university-students/information-technology-leadership-program/united-states">GE ITLP Program</a> 
+				projects <span>and the data</span> about <strong>those projects</strong>.
+			</p>
+			<!-- Unknown location for this post -->
+			<form class="simple-form bordered-element" action="https://apps.kelley.iu.edu/systemsapi/echo/echo" method="POST">
+				<label  for="searchPhrase">Search Phrase:</label>
+				<input type="text" name="searchPhrase" id="searchPhrase" />
+
+				<br/>
+				<input type="checkbox" name="useStars" id="useStars" checked="true" /> 
+				<label for="useStars">Use Stars?</label>
+				<br/>
+				<label for="langChoice">Language:</label> 
+				<select name="langChoice" id="langChoice">
+					<option>All</option>
+					<option>JavaScript</option>
+					<option selected>C#</option>
+					<option>Java</option>
+					<option>Ruby</option>
+				</select>
+				<br/>
+				<input type="submit" value="search" />
+			</form>
+			<div id="results" class="bordered-element">
+				<button id="toggleBtn">Hide</button>
+				<div id="resultList" class = "bordered-element">
+				</div>
+			</div>
+		</section>
+		<br/>
+		<footer>
+			Shannon Simpson | 2016 
+		</footer> 
+		<script src="js/jquery-1.12.2.js" type="text/javascript"</script> 
+		
+	</body>
+</html>

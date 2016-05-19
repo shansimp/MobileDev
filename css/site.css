@@ -1,0 +1,278 @@
+/* site.css */
+/*Shannon Simpson*/
+
+header, footer {
+  border: solid 1px black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+footer {
+  /* MODIFICATIONS HERE */
+  padding: 10px;
+  position:fixed;
+  bottom:0;
+  right:0;
+}
+
+body {
+  /* MODIFICATIONS HERE */
+  background: url("https://i.ytimg.com/vi/v1SabYdIlZI/maxresdefault.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-size: cover;
+  background-size: cover;
+  font-family: verdana, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  background-color:  #4682B4;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+.bordered-element {
+  border: solid 1px #444;
+  border-radius: 2px;
+}
+
+#main {
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  color: #202020;
+  margin: 20px 0;
+  padding: 10px;
+  background-color:white
+}
+
+.simple-form {
+  padding: 5px;
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.simple-form label {
+  font-weight: bold;
+}
+
+
+
+/*
+.simple-form input {
+width: 150px;
+}
+*/
+
+.simple-form input[type=text],
+.simple-form select,
+.simple-form input[type=password],
+.simple-form textarea {
+  width: 150px;
+}
+
+.simple-form input[type=submit] {
+  background-color: #4682B4;
+  font-weight: bold;
+  color: white;
+  border-radius: 15px;
+  padding: 4px;
+  margin-top: 5px;
+}
+.container {
+  width: 989px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 5px;
+}
+
+#results {
+  padding: 2px;
+  width: 600px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+nav {
+  /* MODIFICATIONS HERE */
+  float: left;
+  margin-right: 5px;
+  width: 100%
+}
+
+nav li {
+  display: inline;
+  font-size: 18px;
+}
+
+a {
+  /* MODIFICATIONS HERE */
+  color: #0000ff;
+}
+
+/* MODIFICATIONS HERE */
+.GE_LOGO {
+   width: 200px; 
+   height: 200px;
+}
+
+/* MODIFICATIONS HERE */
+/* This will style any <img> element in .GE_LOGO div */
+.GE_LOGO img {
+   height: 100%;
+   width: 100%;
+}
+
+
+
+
+
+/* CODE FOR MODIFIED MENU */
+/* source code for menu: "http://cssmenumaker.com/menu/tabbed-menu" */
+/* */
+/* */
+/* */
+/* */
+@import url(http://fonts.googleapis.com/css?family=Capriola);
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  font-family: Capriola, Helvetica, sans-serif;
+}
+#cssmenu {
+  width: auto;
+  height: 59px;
+  padding-bottom: 4px;
+}
+#cssmenu.align-right {
+  float: right;
+}
+#cssmenu.align-right ul li {
+  float: right;
+  margin-right: 0;
+  margin-left: 4px;
+}
+#cssmenu.align-right ul li:first-child,
+#cssmenu.align-right ul li:first-child > a {
+  border-bottom-right-radius: 3px;
+}
+#cssmenu #bg-one,
+#cssmenu #bg-two,
+#cssmenu #bg-three,
+#cssmenu #bg-four {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+#cssmenu #bg-one {
+  height: 10px;
+  background: #0f71ba;
+}
+#cssmenu #bg-two {
+  height: 59px;
+  z-index: 2;
+  background: url('../img/bg.png');
+}
+#cssmenu #bg-three {
+  bottom: 4px;
+  height: 55px;
+  z-index: 3;
+  background: #222222;
+  background: -moz-linear-gradient(top, #555555 0%, #222222 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #555555), color-stop(100%, #222222));
+  background: -webkit-linear-gradient(top, #555555 0%, #222222 100%);
+  background: -o-linear-gradient(top, #555555 0%, #222222 100%);
+  background: -ms-linear-gradient(top, #555555 0%, #222222 100%);
+  background: linear-gradient(to bottom, #555555 0%, #222222 100%);
+}
+#cssmenu #bg-four {
+  bottom: 4px;
+  height: 55px;
+  z-index: 4;
+  background: url('../img/bg.png');
+}
+#cssmenu ul {
+  height: 59px;
+}
+#cssmenu ul li {
+  float: left;
+  margin-right: 4px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  z-index: 5;
+}
+#cssmenu ul li a {
+  padding: 24px 30px 20px 30px;
+  margin-bottom: 4px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  color: #1e1e1e;
+  font-size: 15px;
+  text-decoration: none;
+}
+#cssmenu ul li:first-child,
+#cssmenu ul li:first-child > a {
+  border-bottom-left-radius: 3px;
+}
+#cssmenu ul li:hover,
+#cssmenu ul li.active {
+  background: #0f71ba;
+  background: -moz-linear-gradient(top, #3fa4f0 0%, #0f71ba 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3fa4f0), color-stop(100%, #0f71ba));
+  background: -webkit-linear-gradient(top, #3fa4f0 0%, #0f71ba 100%);
+  background: -o-linear-gradient(top, #3fa4f0 0%, #0f71ba 100%);
+  background: -ms-linear-gradient(top, #3fa4f0 0%, #0f71ba 100%);
+  background: linear-gradient(to bottom, #3fa4f0 0%, #0f71ba 100%);
+}
+#cssmenu ul li a:hover,
+#cssmenu ul li.active > a {
+  background: url('../img/bg.png');
+  color: #ffffff;
+}
+/* */
+/* */
+/* */
+/* */
+/* */
+/* End of Code for Menu */
+
+
+.result {
+  margin: 5px;
+  border: 1px solid #888;
+}
+
+.result .title {
+  font-weight: bold;
+}
+
+label
+    {
+    	width: 100px;
+    	text-align: right;
+    	vertical-align: baseline;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+    
+@media screen and (max-width:480px) 
+{
+    label 
+    {
+        width: auto;
+        text-align: left;
+        display: block;
+    }
+}    
+
+

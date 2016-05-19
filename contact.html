@@ -1,0 +1,92 @@
+<!-- Shannon Simpson  -->
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Contact</title>
+		<link rel="stylesheet" type="text/css" href="css/site.css">
+		<meta name="HandheldFriendly" content="true" />
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>      
+		<![endif]-->
+		<meta charset='utf-8'>
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	    <script src="js/script.js"></script>
+	    <script src="js/jquery-1.12.2.js" type="text/javascript"</script>
+	    
+	    <script> var results = []; </script>
+	    
+	</head>
+	<body>
+		<header>
+			<div class="GE_LOGO">
+				<img src="img/ge_mono_blue.png" />
+			</div>
+			<h1>Contact Us</h1>
+			<p><b>Want to know more?</b></p>
+		</header>
+		<hr />
+		<div id='cssmenu'>
+			<ul>
+				<li><a href='index.html'><span>Home</span></a></li>
+			    <li><a href='about.html'><span>About</span></a></li>
+			    <li class='active'><a href='contact.html'><span>Contact</span></a></li>
+			</ul>
+		</div>
+		<hr />
+		<h1>Contact Form</h1>
+	    <form name="form1" action="" method="post">
+	    	<fieldset>
+		        <legend>For More Information, Please fill out the following:</legend>
+		        	
+<!-- NAME TEXTBOX -->
+				<p>	
+		          <label>Name</label>
+		          <input type = "text" id = "txt_Name" type = "text" required/>
+		        </p>
+		        <p>
+<!-- PHONE NUMBER TEXTBOX -->
+		          <p><label>Phone Number</label>
+		          	<input name="txt_Phone" type="tel" /></p>
+		          
+		        </p>
+		        <p>
+<!-- EMAIL TEXTBOX -->
+		          <label>Email</label>
+		          <input type = "email" name = "txt_Email" value = "" type="url" required />
+		        </p>
+		        <p>		        	
+<!-- BEST TIME TO CONTACT - DROPDOWN -->
+					<label>Best Method to Contact. Multiple selections allowed:</label>
+		          	<select id = "time_list" size = 4 multiple>
+	               		<option value = "Work">Work Phone</option>
+	               		<option value = "Cell">Cell Phone</option>
+	               		<option value = "Email">Email</option>
+	               		<option value = "InstMess">Instant Messanger</option>
+	             	</select>
+		        </p>
+		        <div id="container_work"> </div>
+		        <p>
+<!-- LOCATION CHECKBOX -->
+	           		<label>Located in the US?</label>
+	             	<input type = "checkbox" id = "US" value = "US_YES" />
+	            	<label for = "chkEggs">YES</label>
+	         	</p>
+<!-- QUESTIONS AND COMMENTS MULTILINE TEXTBOX -->
+		        <textarea cols="70" rows="7"></textarea> 
+	        	<br />
+<!-- SUBMIT BUTTON --> 
+<script src="js/script.js"></script> 
+	        	<input type="submit" value="Submit now" onclick = "valid_check();"/>
+			</fieldset>
+	    </form>
+		<hr />
+		<footer>
+			Shannon Simpson | 2016 
+		</footer> 
+	</body>
+</html>
+
