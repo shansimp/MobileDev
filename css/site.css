@@ -5,25 +5,28 @@ header, footer {
   border: solid 1px black;
   border-radius: 10px;
   padding: 10px;
+  color: black;
 }
 
 footer {
-  /* MODIFICATIONS HERE */
+   
   padding: 10px;
   position:fixed;
   bottom:0;
   right:0;
+  color: white;
 }
 
 body {
-  /* MODIFICATIONS HERE */
-  background: url("https://i.ytimg.com/vi/v1SabYdIlZI/maxresdefault.jpg") no-repeat center center fixed;
+   
+  background: url("https://newevolutiondesigns.com/images/freebies/city-wallpaper-18.jpg") no-repeat center center fixed;
   background-size: cover;
   background-size: cover;
   background-size: cover;
   font-family: verdana, Arial, Helvetica, sans-serif;
   font-size: 14px;
   background-color:  #4682B4;
+  color: white;
 }
 
 html, body {
@@ -56,6 +59,11 @@ html, body {
   font-weight: bold;
 }
 
+h4
+{
+	font-size: 28px;
+	padding-left: 15%;
+}
 
 
 /*
@@ -94,7 +102,6 @@ width: 150px;
 }
 
 nav {
-  /* MODIFICATIONS HERE */
   float: left;
   margin-right: 5px;
   width: 100%
@@ -106,19 +113,16 @@ nav li {
 }
 
 a {
-  /* MODIFICATIONS HERE */
+
   color: #0000ff;
 }
 
-/* MODIFICATIONS HERE */
-.GE_LOGO {
+.Superhero_Sil {
    width: 200px; 
    height: 200px;
 }
 
-/* MODIFICATIONS HERE */
-/* This will style any <img> element in .GE_LOGO div */
-.GE_LOGO img {
+.Superhero_Sil img {
    height: 100%;
    width: 100%;
 }

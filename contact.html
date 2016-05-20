@@ -22,11 +22,11 @@
 	</head>
 	<body>
 		<header>
-			<div class="GE_LOGO">
-				<img src="img/ge_mono_blue.png" />
+			<div class="Superhero_Sil">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Placeholder_female_superhero_c.png" />
 			</div>
 			<h1>Contact Us</h1>
-			<p><b>Want to know more?</b></p>
+			<p><b>Want to know more? Want to become a superhero?</b></p>
 		</header>
 		<hr />
 		<div id='cssmenu'>
@@ -38,54 +38,45 @@
 		</div>
 		<hr />
 		<h1>Contact Form</h1>
-	    <form name="form1" action="" method="post">
+	    <form name="form1" action="" method="post" style="color:white">
 	    	<fieldset>
 		        <legend>For More Information, Please fill out the following:</legend>
-		        	
-<!-- NAME TEXTBOX -->
 				<p>	
 		          <label>Name</label>
 		          <input type = "text" id = "txt_Name" type = "text" required/>
 		        </p>
 		        <p>
-<!-- PHONE NUMBER TEXTBOX -->
 		          <p><label>Phone Number</label>
 		          	<input name="txt_Phone" type="tel" /></p>
-		          
 		        </p>
 		        <p>
-<!-- EMAIL TEXTBOX -->
 		          <label>Email</label>
 		          <input type = "email" name = "txt_Email" value = "" type="url" required />
 		        </p>
 		        <p>		        	
-<!-- BEST TIME TO CONTACT - DROPDOWN -->
-					<label>Best Method to Contact. Multiple selections allowed:</label>
-		          	<select id = "time_list" size = 4 multiple>
-	               		<option value = "Work">Work Phone</option>
-	               		<option value = "Cell">Cell Phone</option>
-	               		<option value = "Email">Email</option>
-	               		<option value = "InstMess">Instant Messanger</option>
+					<label>Preferred Method to Contact:</label>
+		          	<select id = "time_list">
+	               		<option value = "Work">Phone</option>
+	               		<option value = "Cell">Email</option>
+	               		<option value = "Cell">Mail</option>
 	             	</select>
 		        </p>
 		        <div id="container_work"> </div>
 		        <p>
-<!-- LOCATION CHECKBOX -->
 	           		<label>Located in the US?</label>
 	             	<input type = "checkbox" id = "US" value = "US_YES" />
-	            	<label for = "chkEggs">YES</label>
+	            	<label for = "chkEggs"></label>
 	         	</p>
-<!-- QUESTIONS AND COMMENTS MULTILINE TEXTBOX -->
+	         	Additional Comments
 		        <textarea cols="70" rows="7"></textarea> 
 	        	<br />
-<!-- SUBMIT BUTTON --> 
 <script src="js/script.js"></script> 
 	        	<input type="submit" value="Submit now" onclick = "valid_check();"/>
 			</fieldset>
 	    </form>
 		<hr />
 		<footer>
-			Shannon Simpson | 2016 
+			Superhero Studio | 2016 
 		</footer> 
 	</body>
 </html>
