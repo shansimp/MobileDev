@@ -18,7 +18,7 @@ footer {
 }
 
 body {
-   
+
   background: url("https://newevolutiondesigns.com/images/freebies/city-wallpaper-18.jpg") no-repeat center center fixed;
   background-size: cover;
   background-size: cover;
@@ -126,7 +126,6 @@ a {
    height: 100%;
    width: 100%;
 }
-
 
 
 
@@ -250,6 +249,22 @@ a {
 /* */
 /* End of Code for Menu */
 
+/*Mark*/
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper{
+  background-color: transparent;
+  padding: 1em;
+}
+#contact_form {
+  max-width: 600px;
+  padding:1em;
+  background:rgba(0,0,0,0.5);
+}
+.ui-input-text, .ui-select, .ui-btn{
+  max-width: 300px;
+}
+
+
+/*mark*/
 
 .result {
   margin: 5px;
@@ -262,12 +277,17 @@ a {
 
 label
     {
-    	width: 100px;
-    	text-align: right;
+    	width: 150px;
+    	text-align: left;
     	vertical-align: baseline;
         display: inline-block;
         margin-bottom: 5px;
     }
+#textarea-enhanced{
+  max-width: 480px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
     
 @media screen and (max-width:480px) 
 {
@@ -277,6 +297,7 @@ label
         text-align: left;
         display: block;
     }
+
 }    
 
 
