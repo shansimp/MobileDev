@@ -30,40 +30,12 @@ $(document).ready(function() {
 	
 	
 	
-	function valid_check()  
-	{  
-		//check is phone number is in valid format:
-		alert(document.getElementById("txt_Phone").value);
-	  	if((txt_Phone.value.match(/^[2-9]{1}\d{2}-[2-9]{1}\d{2}-\d{4}$/))) 
-	  	{
-  			console.log("valid PHONE number");
-  		}
-  		else  
-  		{
-	  		alert("Invalid Phone Number Format. Please input: XXX-XXX-XXXX");  
-    		console.log("INVALD phone number");
-  		}  
-	
-	  	//Check is email is valid:
-	  	//Alternate, simpler: /\S+@\S+\.\S+/
-	  	if((txt_Email.value.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/))) 
-	  	{
-  			console.log("valid EMAIL");
-  		}
-  		else  
-  		{
-	  		alert("Invalid Email Format. Please input: XXXXXXXX@XXX.XXX");  
-    		console.log("INVALD EMAIL number");
-  		}  
-	}
-	
-	
-	/*Network API Calls */
+	//Network API Calls 
 	
 	//on submit, we need to trigger the API with a submit event handler
 	
 	
-	$( "#main" ).submit(function( event ) {
+	$( "#maindfasdf" ).submit(function( event ) {
 	  
   	console.log( "Submit Handler called." );
   	event.preventDefault();
@@ -110,7 +82,7 @@ $(document).ready(function() {
 	          console.log("API Call completed");
 	        });
 	  });
-	
+
 	
 	//ENDS the API CALL
 	    
@@ -148,3 +120,95 @@ $(document).ready(function() {
 		google.maps.event.addDomListener(window, 'load', initialize); 
   
 });
+
+function valid_check()  
+	{  
+	"use strict";
+	var txtEmail = document.getElementById("txt_Email").value;
+  	var txtPhone = document.getElementById("txt_Phone").value;
+	var valid;
+	
+		//check is phone number is in valid format:
+		//alert(document.getElementById("txt_Phone").value);
+	  	if(txtPhone.match(/^\(?([0-9]{4})\)?[-]?([0-9]{3})[-]?([0-9]{4})$/))
+	  	{
+  			console.log("valid PHONE number");
+			valid = "true";
+  		}
+  		else  
+  		{
+	  		alert("Invalid Phone Number Format. Please input: XXXX-XXX-XXXX");  
+    		console.log("INVALD phone number");
+			valid="false";
+  		}  
+	
+	  	//Check is email is valid:
+	  	//Alternate, simpler: /\S+@\S+\.\S+/
+	  	if(txtEmail.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/))
+	  	{
+  			console.log("valid EMAIL");
+			if(valid==="true"){}
+  		}
+  		else  
+  		{
+	  		alert("Invalid Email Format. Please input: XXXXXXXX@XXX.XXX");  
+    		console.log("INVALD EMAIL number");
+			valid=false;
+  		}  
+		
+		if(valid==="true")
+		{
+			contact();
+			
+			return false;	
+		}
+
+		return false;
+	}
+
+function contact() {
+	
+		if(typeof(Storage) !== "undefined") {
+				var txtName = document.getElementById("txt_Name").value;
+				var txtEmail = document.getElementById("txt_Email").value;
+				var txtPhone = document.getElementById("txt_Phone").value;
+				var txtContact = document.getElementById("select-native-1").value;
+				var txtUS = document.forms["contact_form"]["US"].value;
+				var txtComment = document.getElementById("textarea-enhanced").value;
+			if (txtName !== null) {
+				sessionStorage.txtName = sessionStorage.txtName + ", " + document.getElementById("txt_Name").value;
+			} else {
+				sessionStorage.txtName = 1;
+			}
+			if (txtEmail !== null) {
+				sessionStorage.txtEmail = sessionStorage.txtEmail + ", " + document.getElementById("txt_Email").value;
+			} else {
+				sessionStorage.txtEmail = 1;
+			}
+			if (txtPhone !== null) {
+				sessionStorage.txtPhone = sessionStorage.txtPhone + ", " + document.getElementById("txt_Phone").value;
+			} else {
+				sessionStorage.txtPhone = 1;
+			}
+			if (txtContact !== null) {
+				sessionStorage.txtContact = sessionStorage.txtContact + ", " + document.getElementById("select-native-1").value;
+			} else {
+				sessionStorage.txtContact = 1;
+			}
+			if (txtComment !== null) {
+				sessionStorage.txtComment = sessionStorage.txtComment + ", " + document.getElementById("textarea-enhanced").value;
+			} else {
+				sessionStorage.txtComment = null;
+			}
+			if (txtUS !== null) {
+				sessionStorage.txtUS = sessionStorage.txtUS + ", " + txtUS;
+			} else {
+				sessionStorage.txtComment = null;
+			}
+			
+			document.getElementById("contact-info").innerHTML = "<ul data-role=\"listview\"><li>" + sessionStorage.txtName + "</li><li>" + sessionStorage.txtEmail + "</li><li>" + sessionStorage.txtPhone + "</li><li>" + sessionStorage.txtContact + "</li><li>" + sessionStorage.txtComment + "</li><li>" + sessionStorage.txtUS + "</li></ul>";
+		} else {
+			document.getElementById("contact-info").innerHTML = "Contact Us";
+		}
+		alert("worked!");	
+	}

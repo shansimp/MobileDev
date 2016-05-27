@@ -248,13 +248,19 @@ a {
 /* End of Code for Menu */
 
 /*Mark*/
+#contact-info{
+  border: solid 1px black;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: black;
+  margin:0;
+}
 .ui-page{width:auto !important; position: relative !important;}
 @media screen and (min-width: 481px) {
-.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper{
-
-  background-color: transparent;
-  padding: 1em;
-}
+	.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper{
+	  background-color: transparent;
+	  padding: 1em;
+	}
 }
 #content{
   max-width: 600px;
