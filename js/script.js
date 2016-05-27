@@ -143,7 +143,7 @@ $(document).ready(function() {
 	    zoom:5,
 	    mapTypeId:google.maps.MapTypeId.ROADMAP
 	  };
-	  	var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+	  	var map=new google.maps.Map(document.getElementById("map-canvas"),mapProp);
 	}
 		google.maps.event.addDomListener(window, 'load', initialize); 
   
